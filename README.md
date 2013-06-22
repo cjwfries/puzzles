@@ -5,6 +5,5 @@ This repository is to keep all of my coding puzzles in one place. These may incl
 ProjectEuler.net
 ================
 
-3. Largest Prime Number
-   file: euler_3.py
+3) Largest Prime Number (euler_3.py)
    
