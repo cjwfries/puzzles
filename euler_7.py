@@ -23,9 +23,12 @@ def getPrimes(num):
             numPrimes += 1
             if numPrimes == num:
                 return sieve[i]
-            for j in range(i+1, len(sieve)):
-                if sieve[j] != -1 and sieve[j] % sieve[i] == 0:
-                    sieve[j] = -1
+            incr = 2
+            x = incr*sieve[i]
+            while(x < maxSearch):
+                sieve[x-2] = -1
+                incr += 1
+                x = incr*sieve[i]
     for i in range(len(sieve)):
         if sieve[i] != -1:
             ret.append(sieve[i])
