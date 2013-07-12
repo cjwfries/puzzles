@@ -1,7 +1,7 @@
 """
 06/52/13
 
-Project Euler #19 Special Pythagorean triplet
+Project Euler #9 Special Pythagorean triplet
     A Pythagorean triplet is a set of three natural numbers, a  b  c, for which,
     a^2 + b^2 = c^2
     For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
