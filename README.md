@@ -11,3 +11,4 @@ ProjectEuler.net: ("euler_#" files) math programming puzzles
    10. Summation of Primes
    11. Largest Product in a Grid
    13. Large sum
+   16. Power Digit Sum
