@@ -1,7 +1,9 @@
 """
 06/28/13
 
-Project Euler #13 Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+Project Euler #13 Large sum
+	
+	Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
     (See object s in setup() for numbers.)
 
 """
