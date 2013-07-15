@@ -12,3 +12,7 @@ ProjectEuler.net: ("euler_#" files) math programming puzzles
    11. Largest Product in a Grid
    13. Large sum
    16. Power Digit Sum
+  
+Cracking the Coding Interview by Gayle Laakmann McDowell: ("cracking_ch#_prob#" files) interview problems
+	Chapter 4 Trees and Graphs
+		1. Balanced Binary Tree
