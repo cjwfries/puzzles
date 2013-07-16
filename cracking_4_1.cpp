@@ -4,9 +4,13 @@
 #include <algorithm> //max
 
 using namespace std;
-/* Cracking the Coding Interview
+/* 7/14/13 Cracking the Coding Interview
 *	4.1 Implement a function to check if a binary tree is balanced. A balanced tree is defined to be
 *	a tree such that the heights of the two subtrees of any node never differ by more than one.
+*
+*	Time Complexity:
+*		Time: O(N)- we visit each node once
+*		Space: O(log N)- maximum number of consecutive recursive calls (after each call is finished, stack is released)
 *
 *	What I Learned:
 *		Always initialize pointers, even must explicitly initialize to NULL
@@ -16,6 +20,8 @@ using namespace std;
 *			Therefore, while it is helpful to use a simple case to figure out a solution; I still need to keep the overall picture in mind
 */
 
+
+// TODO: delete dynamically allocated nodes
 
 class node{
 	public:
