@@ -6,6 +6,10 @@ using namespace std;
 
 #define MID length/2
 
+/* 7/20/13 Cracking the Coding Interview
+* 4.4 Given a binary search tree, design an algorithm which creates a linked list of all the nodes at each depth.
+*/
+
 class LLnode
 {
 	public:
@@ -73,5 +77,6 @@ int main()
 		}
 		cout << endl;
 	}
+	delete v;
 	return 1;
 }
