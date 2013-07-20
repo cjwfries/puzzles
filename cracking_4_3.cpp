@@ -12,6 +12,7 @@ using namespace std;
 *
 * What I learned:
 * 	Test indices very carefully
+*	Keep it simple- when using recursion try to return something rather than passing a pointer in the parameter
 */
 
 class treeNode{
@@ -27,30 +28,15 @@ class treeNode{
 };
 
 
-void createBST(int* a, int start, int fin, treeNode* root)
+treeNode* createMinBST(int* a, int start, int fin)
 {
-	if(fin < start || root == NULL)
-		return;
-	if(fin - start == 0){
-		if(a[0] <= root->data)
-			root->left = new treeNode(a[0]);
-		else
-			root->right = new treeNode(a[0]);
-		return;
-	}
-	int length = fin - start + 1;
-	int leftIdx = start + MID/2;
-	int rightIdx = MID + (fin - MID)/2 + 1;
-	if(leftIdx >= start and leftIdx <= fin)
-	{
-		root->left = new treeNode(a[leftIdx]);
-	}
-	if(rightIdx >= start and rightIdx <= fin)
-	{
-		root->right = new treeNode(a[rightIdx]);		
-	}	
-	createBST(a, start, start + MID - 1, root->left);
-	createBST(a, start + MID + 1, fin, root->right);
+	if(fin < start)
+		return NULL;
+	int mid = (fin - start) / 2 + start;
+	treeNode* n = new treeNode(a[mid]);
+	n->left = createMinBST(a, start, mid - 1);
+	n->right = createMinBST(a, mid + 1 , fin);
+	return n;
 }
 
 
@@ -91,10 +77,8 @@ void graphLevel(treeNode* n, int level, vector<LLnode*> * v)
 int main()
 {
 	int a[] = {0, 1, 2, 3};
-	treeNode* n = new treeNode(a[(3+1)/2]);
-	createBST(a, 0, 3, n);
-	
-	cout << "***" << endl;
+	treeNode* n = createMinBST(a, 0, 3);
+
 	vector<LLnode*> * v = new vector<LLnode*>();
 	graphLevel(n, 0, v);
 	for(int i = 0 ; i < v->size() ; i++)
@@ -103,8 +87,8 @@ int main()
 		cout << ptr->data << ", ";
 		while(ptr->next != NULL)
 		{
-			cout << ptr->data << ", ";
 			ptr = ptr->next;
+			cout << ptr->data << ", ";
 		}
 		cout << endl;
 	}
