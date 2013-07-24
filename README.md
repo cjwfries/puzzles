@@ -20,3 +20,5 @@ Cracking the Coding Interview by Gayle Laakmann McDowell: ("cracking_ch#_prob#" 
 		2. Directed Graph Route
 		3. Sorted Array to BST
 		4. Linked List of Tree Levels
+		5. Check if a Binary Tree is a BST
+		6. Find the next In-Order Node
