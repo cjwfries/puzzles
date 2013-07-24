@@ -4,8 +4,6 @@
 
 using namespace std;
 
-#define MID length/2
-
 /* 7/16/13 Cracking the Coding Interview
 * 4.3 Given a sorted (in increasing order) array, write an algorithm to create
 * a binary search tree with minimal height.
@@ -53,6 +51,7 @@ class LLnode
 
 };
 
+// From #4.4 to check correctness
 void graphLevel(treeNode* n, int level, vector<LLnode*> * v)
 {
 	if(n == NULL)
