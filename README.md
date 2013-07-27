@@ -14,6 +14,9 @@ ProjectEuler.net: ("euler_#" files) math programming puzzles
    16. Power Digit Sum
   
 Cracking the Coding Interview by Gayle Laakmann McDowell: ("cracking_ch#_prob#" files) interview problems
+	Chapter 1 Arrays and Strings
+		1. Checking if String is all Unique Chars
+		2. Reverse a Null-Terminated String
 	
 	Chapter 4 Trees and Graphs
 		1. Balanced Binary Tree

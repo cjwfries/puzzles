@@ -10,6 +10,9 @@ using namespace std;
 /* 7/27/13 Cracking the Coding Interview
 * 1.1 Implement an algorithm to determine if a string has all unique characters.
 * What if you can't use additional data structures?
+*
+* Note:
+* Check to see if we're using ASCII or Unicode
 */
 
 // No additional data structures
@@ -35,6 +38,7 @@ bool isUnique(string str)
 }
 
 // Using hash table
+// O(N) time, O(N) space
 bool isUniqueHash(string str)
 {
 	if(str.length() == 0 || str.length() == 1)
