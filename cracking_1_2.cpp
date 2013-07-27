@@ -33,7 +33,10 @@ void reverse(char* str)
 int main(int argc, char* argv[])
 {
 	if(argc < 2)
+	{
 		cerr << "Usage: " << argv[0] << "STRING" << endl;
+		return 1;
+	}
 	reverse(argv[1]);
 	cout << argv[1] << endl;
 }
