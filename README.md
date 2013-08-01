@@ -30,3 +30,5 @@ Cracking the Coding Interview by Gayle Laakmann McDowell: ("cracking_ch#_prob#" 
 		
 	Chapter 9 Recursion and Dynamic Programming
 		1. Permutations of Hops on a Staircase
+		2. Find a Path
+		3. Magic Index
